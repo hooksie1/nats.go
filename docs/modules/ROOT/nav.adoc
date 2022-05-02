@@ -3,7 +3,7 @@
 ** xref:installation.adoc[Installation]
 ** xref:basic.adoc[Basic Usage]
 ** xref:jetstream-basic.adoc[JetStream Basic Usage]
-** xref:jetstream-managent.adoc[JetStream Basic Management]
+** xref:jetstream-management.adoc[JetStream Basic Management]
 ** xref:encoded-connections.adoc[Encoded Connections]
 ** xref:auth.adoc[New Authentication (Nkeys and User Crednetials)]
 ** xref:tls.adoc[TLS]
