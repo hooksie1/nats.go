@@ -1,4 +1,4 @@
 = NATS - Go Client
-:source-language: go
+
 
 A http://golang.org/[Go] client for the https://nats.io/[NATS messaging system].
