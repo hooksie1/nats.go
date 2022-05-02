@@ -1,4 +1,4 @@
-== Jetstream Basic Management
+= Jetstream Basic Management
 
 [source]
 ----

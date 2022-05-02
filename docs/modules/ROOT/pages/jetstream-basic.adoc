@@ -1,4 +1,4 @@
-== Jetstream Basic Usage
+= Jetstream Basic Usage
 
 [source]
 ----

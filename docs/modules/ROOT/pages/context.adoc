@@ -1,4 +1,4 @@
-== Context Support (+Go 1.7)
+= Context Support (+Go 1.7)
 
 [source]
 ----

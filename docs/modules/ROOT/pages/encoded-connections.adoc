@@ -1,4 +1,4 @@
-== Encoded Connections
+= Encoded Connections
 
 [source]
 ----

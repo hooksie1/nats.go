@@ -1,4 +1,4 @@
-== Using Go Channels (netchan)
+= Using Go Channels (netchan)
 
 [source]
 ----

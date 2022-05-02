@@ -1,4 +1,4 @@
-== Wildcard Subscriptions
+= Wildcard Subscriptions
 
 [source]
 ----
