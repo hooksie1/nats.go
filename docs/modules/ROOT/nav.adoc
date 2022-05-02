@@ -1,5 +1,4 @@
 * xref:index.adoc[Overview]
-** xref:installation.adoc[Installation]
 * Examples
 ** xref:basic.adoc[Basic Usage]
 ** xref:jetstream-basic.adoc[JetStream Basic Usage]
