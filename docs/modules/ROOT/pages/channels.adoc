@@ -1,4 +1,5 @@
 = Using Go Channels (netchan)
+:source-language: go
 
 [source]
 ----

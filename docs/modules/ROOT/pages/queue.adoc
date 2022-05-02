@@ -1,4 +1,5 @@
 = Queue Groups
+:source-language: go
 
 [source]
 ----

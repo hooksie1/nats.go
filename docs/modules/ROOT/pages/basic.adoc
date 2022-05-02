@@ -1,6 +1,7 @@
 = Basic Usage
+:source-language: go
 
-[source,go]
+[source]
 ----
 import "github.com/nats-io/nats.go"
 

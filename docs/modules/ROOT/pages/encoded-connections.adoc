@@ -1,4 +1,5 @@
 = Encoded Connections
+:source-language: go
 
 [source]
 ----

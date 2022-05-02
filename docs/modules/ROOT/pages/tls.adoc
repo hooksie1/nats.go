@@ -1,4 +1,5 @@
 = TLS
+:source-language: go
 
 [source]
 ----

@@ -1,4 +1,5 @@
 = Advanced Usage
+:source-language: go
 
 [source]
 ----

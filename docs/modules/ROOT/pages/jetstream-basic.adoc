@@ -1,4 +1,5 @@
 = Jetstream Basic Usage
+:source-language: go
 
 [source]
 ----

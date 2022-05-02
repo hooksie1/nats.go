@@ -1,4 +1,5 @@
 = Wildcard Subscriptions
+:source-language: go
 
 [source]
 ----

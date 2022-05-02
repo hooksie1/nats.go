@@ -1,4 +1,5 @@
 = Context Support (+Go 1.7)
+:source-language: go
 
 [source]
 ----
