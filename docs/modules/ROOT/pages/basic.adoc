@@ -1,6 +1,6 @@
 = Basic Usage
 
-[source]
+[source,go]
 ----
 import "github.com/nats-io/nats.go"
 
