@@ -1,0 +1,36 @@
+== TLS
+
+[source]
+----
+// tls as a scheme will enable secure connections by default. This will also verify the server name.
+nc, err := nats.Connect("tls://nats.demo.io:4443")
+
+// If you are using a self-signed certificate, you need to have a tls.Config with RootCAs setup.
+// We provide a helper method to make this case easier.
+nc, err = nats.Connect("tls://localhost:4443", nats.RootCAs("./configs/certs/ca.pem"))
+
+// If the server requires client certificate, there is an helper function for that too:
+cert := nats.ClientCert("./configs/certs/client-cert.pem", "./configs/certs/client-key.pem")
+nc, err = nats.Connect("tls://localhost:4443", cert)
+
+// You can also supply a complete tls.Config
+
+certFile := "./configs/certs/client-cert.pem"
+keyFile := "./configs/certs/client-key.pem"
+cert, err := tls.LoadX509KeyPair(certFile, keyFile)
+if err != nil {
+    t.Fatalf("error parsing X509 certificate/key pair: %v", err)
+}
+
+config := &tls.Config{
+    ServerName: 	opts.Host,
+    Certificates: 	[]tls.Certificate{cert},
+    RootCAs:    	pool,
+    MinVersion: 	tls.VersionTLS12,
+}
+
+nc, err = nats.Connect("nats://localhost:4443", nats.Secure(config))
+if err != nil {
+	t.Fatalf("Got an error on Connect with Secure Options: %+v\n", err)
+}
+----

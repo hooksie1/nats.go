@@ -1,0 +1,22 @@
+== Wildcard Subscriptions
+
+[source]
+----
+// "*" matches any token, at any level of the subject.
+nc.Subscribe("foo.*.baz", func(m *Msg) {
+    fmt.Printf("Msg received on [%s] : %s\n", m.Subject, string(m.Data));
+})
+
+nc.Subscribe("foo.bar.*", func(m *Msg) {
+    fmt.Printf("Msg received on [%s] : %s\n", m.Subject, string(m.Data));
+})
+
+// ">" matches any length of the tail of a subject, and can only be the last token
+// E.g. 'foo.>' will match 'foo.bar', 'foo.bar.baz', 'foo.foo.bar.bax.22'
+nc.Subscribe("foo.>", func(m *Msg) {
+    fmt.Printf("Msg received on [%s] : %s\n", m.Subject, string(m.Data));
+})
+
+// Matches all of the above
+nc.Publish("foo.bar.baz", []byte("Hello World"))
+----

@@ -1,0 +1,35 @@
+== Jetstream Basic Management
+
+[source]
+----
+import "github.com/nats-io/nats.go"
+
+// Connect to NATS
+nc, _ := nats.Connect(nats.DefaultURL)
+
+// Create JetStream Context
+js, _ := nc.JetStream()
+
+// Create a Stream
+js.AddStream(&nats.StreamConfig{
+	Name:     "ORDERS",
+	Subjects: []string{"ORDERS.*"},
+})
+
+// Update a Stream
+js.UpdateStream(&nats.StreamConfig{
+	Name:     "ORDERS",
+	MaxBytes: 8,
+})
+
+// Create a Consumer
+js.AddConsumer("ORDERS", &nats.ConsumerConfig{
+	Durable: "MONITOR",
+})
+
+// Delete Consumer
+js.DeleteConsumer("ORDERS", "MONITOR")
+
+// Delete Stream
+js.DeleteStream("ORDERS")
+----

@@ -1,0 +1,25 @@
+== Installation
+
+[source]
+----
+# Go client
+go get github.com/nats-io/nats.go/
+
+# Server
+go get github.com/nats-io/nats-server
+----
+
+When using or transitioning to Go modules support:
+
+[source,go]
+----
+# Go client latest or explicit version
+go get github.com/nats-io/nats.go/@latest
+go get github.com/nats-io/nats.go/@v1.13.0
+
+# For latest NATS Server, add /v2 at the end
+go get github.com/nats-io/nats-server/v2
+
+# NATS Server v1 is installed otherwise
+# go get github.com/nats-io/nats-server
+----

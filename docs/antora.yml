@@ -1,0 +1,5 @@
+name: nats-go
+title: Nats Go Client
+version: main
+nav:
+- modules/ROOT/nav.adoc
